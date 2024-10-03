@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-yxsj5hmhxz(q(e&yru#zqn85+29^ygb3s6oun)=$7bhhoi2u=i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ReleCloudAGY.azurewebsites.net']
+ALLOWED_HOSTS = ['mydjangoapplinux.azurewebsites.net', 'localhost']
+
 
 
 # Application definition
@@ -42,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
