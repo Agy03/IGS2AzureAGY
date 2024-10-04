@@ -1,1 +1,0 @@
-web: gunicorn relecloud.wsgi --log-file -

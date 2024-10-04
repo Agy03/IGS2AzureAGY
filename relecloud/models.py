@@ -39,3 +39,20 @@ class Cruise(models.Model):
 
     def __str__(self) -> str:
         return self.name
+    
+class InfoRequest(models.Model):
+    name = models.CharField(
+        max_length=50,
+        null=False,
+        blank=False,
+    )
+    email = models.EmailField()
+    notes = models.TextField(
+        max_length=2000,
+        null=False,
+        blank=False
+    )
+    cruise = models.ForeignKey(
+        Cruise,
+        on_delete=models.PROTECT
+    )
