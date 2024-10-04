@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yxsj5hmhxz(q(e&yru#zqn85+29^ygb3s6oun)=$7bhhoi2u=i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mydjangoapplinux.azurewebsites.net']
+ALLOWED_HOSTS = ['mydjangoapplinux.azurewebsites.net','127.0.0.1:8000', '*']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # or 'bootstrap5', depending on which version you're using
 
