@@ -88,9 +88,6 @@ DATABASES = {
         "PASSWORD": "1234asdfASDF",
         "HOST": "relecloud-agy-db.postgres.database.azure.com",
         "PORT": "5432",
-        "OPTIONS": {
-            "sslmode":"require",
-        }
     }
 }
 
