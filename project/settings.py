@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['mydjangoapplinux.azurewebsites.net', 'localhost', '*']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # or 'bootstrap5', depending on which version you're using
 
-
 # Application definition
 
 INSTALLED_APPS = [
