@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yxsj5hmhxz(q(e&yru#zqn85+29^ygb3s6oun)=$7bhhoi2u=i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mydjangoapplinux.azurewebsites.net','127.0.0.1:8000', '*']
+ALLOWED_HOSTS = ['relecloud-agy-f9dygffwg8gwghcq.spaincentral-01.azurewebsites.net','127.0.0.1:8000', '*']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # or 'bootstrap5', depending on which version you're using
 
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django",
-        "USER": "DjangoAgy",
+        "NAME": "agydbrelecloud",
+        "USER": "ali",
         "PASSWORD": "1234asdfASDF",
-        "HOST": "relecloud-agy-db.postgres.database.azure.com",
+        "HOST": "relecloud-db-agy.postgres.database.azure.com",
         "PORT": "5432",
     }
 }

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from . import models  # Importamos desde models.py, donde están los modelos y formularios
+from . import models 
 from django.views import generic
 from django.contrib.messages.views import SuccessMessageMixin
 
@@ -35,7 +35,7 @@ class CruiseDetailView(generic.DetailView):
 class InfoRequestCreate(SuccessMessageMixin, generic.CreateView):
     template_name = 'info_request_create.html'
     model = models.InfoRequest
-    form_class = models.InfoRequestForm  # Usamos el formulario desde models.py
+    form_class = models.InfoRequestForm 
     success_url = reverse_lazy('index')
     success_message = 'Thank you, %(name)s! We will email you when we have more information about %(cruise)s!'
 
