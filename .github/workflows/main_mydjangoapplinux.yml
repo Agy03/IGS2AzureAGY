@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - myDjangoAppLinux
+name: Build and deploy Python app to Azure Web App - mydjangoapplinux
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_60B7B8198E124D63BEAE904830D22C8C }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BC57AEDD021E49B5ACD36C90CB2D832B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_60F653B09EC24608AB7576F47B513E88 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8B1285734AA240EEA1D0C4C0BEB32737 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4BA90FC1608943D481E266725A072F42 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AABBE339C6F94993A574D2DE38B79581 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'myDjangoAppLinux'
+          app-name: 'mydjangoapplinux'
           slot-name: 'Production'
           
